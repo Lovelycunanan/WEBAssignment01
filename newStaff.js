@@ -1,3 +1,8 @@
+//@Name: Assignment 1
+// @Course Code: SODV1201
+// @Class: Software Development Diploma Program
+// @Author: Florica Lovely Mae Cunanan 
+
 var dataSet = [   
     [ "Brielle Williamson", "Integration Specialist", "New York", "4804", "2012/12/02", "$372,000" ],
     [ "Herrod Chandler", "Sales Assistant", "San Francisco", "9608", "2012/08/06", "$137,500" ],

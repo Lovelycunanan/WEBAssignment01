@@ -1,3 +1,8 @@
+//@Name: Assignment 1
+// @Course Code: SODV1201
+// @Class: Software Development Diploma Program
+// @Author: Florica Lovely Mae Cunanan 
+
 $(document).ready(function() {
     function convertToFahrenheit(celsius) {
         return (celsius * 9/5) + 32;

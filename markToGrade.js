@@ -1,3 +1,8 @@
+// @Name: Assignment 1
+// @Course Code: SODV1201
+// @Class: Software Development Diploma Program
+// @Author: Florica Lovely Mae Cunanan  
+
 function convertMarkToGrade() {
     var markInput = document.getElementById('mark-input-box').value;
 

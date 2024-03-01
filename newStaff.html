@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newStaff.css">
+    <title>New Staff</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="markToGrade.html">Grade Converter</a></li>
+                <li><a href="newStaff.html">New Staff</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Staff Information</h1>
+    <input type="text" id="searchInput" onkeyup="searchStaff()" placeholder="Search for names...">
+    <table id="staff-table">
+        <thead>
+            <thead>
+                <tr>
+                    <th onclick="sortTable('Name')">Name</th>
+                    <th onclick="sortTable('Occupation')">Occupation</th>
+                    <th onclick="sortTable('Location')">Location</th>
+                    <th onclick="sortTable('ID')">ID</th>
+                    <th onclick="sortTable('Date')">Date</th>
+                    <th onclick="sortTable('Salary')">Salary</th>
+                </tr>
+            </thead>
+        </thead>
+        <tbody id="staff-table-body">
+            <!-- Staff information will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="newStaff.js"></script>
+</body>
+</html>

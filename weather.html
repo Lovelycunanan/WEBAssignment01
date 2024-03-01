@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="weather.css">
+    <title>Weather</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="markToGrade.html">Grade Converter</a></li>
+                <li><a href="newStaff.html">New Staff</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Temperature Converter</h1>
+    <label for="fahrenheit">Fahrenheit:</label>
+    <input type="number" id="fahrenheit" placeholder="Enter temperature">
+
+    <button id="convertToFahrenheit">Convert</button>
+
+    <div>
+        <p>Celsius: <span id="celsiusOutput"></span></p>
+        <p>Kelvin: <span id="kelvinOutput"></span></p>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>

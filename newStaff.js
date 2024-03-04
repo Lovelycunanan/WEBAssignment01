@@ -3,6 +3,7 @@
 // @Class: Software Development Diploma Program
 // @Author: Florica Lovely Mae Cunanan 
 
+//The provided list of staff
 var dataSet = [   
     [ "Brielle Williamson", "Integration Specialist", "New York", "4804", "2012/12/02", "$372,000" ],
     [ "Herrod Chandler", "Sales Assistant", "San Francisco", "9608", "2012/08/06", "$137,500" ],
@@ -42,8 +43,9 @@ var dataSet = [
     [ "Unity Butler", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675" ]
 ];
 
+// Display staff data in the table
 function displayStaffData() {
-    var tbody = document.getElementById('staff-table-body');
+    var tbody = document.getElementById('staffTableBody');
     tbody.innerHTML = '';
 
     dataSet.forEach(function(staff) {
@@ -56,6 +58,7 @@ function displayStaffData() {
     });
 }
 
+// Sorts the table based on the clicked column
 function sortTable(column) {
     var colIndex = getColumnIndex(column);
     if (column === 'Salary') {
@@ -71,7 +74,7 @@ function sortTable(column) {
     }
     displayStaffData(); 
 
-    var headers = document.querySelectorAll('#staff-table th');
+    var headers = document.querySelectorAll('#staffTable th');
     headers.forEach(function(header) {
         header.classList.remove('sorted');
     });
@@ -79,8 +82,9 @@ function sortTable(column) {
     event.target.classList.add('sorted');
 }
 
+// Index of the clicked column
 function getColumnIndex(columnName) {
-    var headers = document.querySelectorAll('#staff-table th');
+    var headers = document.querySelectorAll('#staffTable th');
     for (var i = 0; i < headers.length; i++) {
         if (headers[i].textContent === columnName) {
             return i;
@@ -89,11 +93,12 @@ function getColumnIndex(columnName) {
     return -1;
 }
 
+// Searches for staff name
 function searchStaff() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("searchInput");
     filter = input.value.toUpperCase();
-    table = document.getElementById("staff-table");
+    table = document.getElementById("staffTable");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];

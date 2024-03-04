@@ -4,17 +4,24 @@
 // @Author: Florica Lovely Mae Cunanan  
 
 function convertMarkToGrade() {
-    var markInput = document.getElementById('mark-input-box').value;
+    //Get entered value in the input box
+    var markInput = document.getElementById('markInputBox').value;
 
     try {
+        //Convert the input value to an integer
         var mark = parseInt(markInput);
+
+        //Check if input is empty
         if (isNaN(mark)) {
             throw "Invalid mark: Please enter a number.";
         }
+
+        //Check if input is valid
         if (mark < 0 || mark > 100) {
             throw "Invalid mark: Mark must be between 0 and 100.";
         }
 
+        //Convert the mark to a letter grade
         var grade = '';
         if (mark >= 90) {
             grade = 'A';
@@ -28,10 +35,12 @@ function convertMarkToGrade() {
             grade = 'F';
         }
 
-        document.getElementById('grade-result').innerText = "Your grade is: " + grade;
-        document.getElementById('validation-message').innerText = ""; // Clear validation message
+        //Display the letter grade
+        document.getElementById('gradeResult').innerText = "Your grade is: " + grade;
+        document.getElementById('validationMessage').innerText = ""; 
     } catch (error) {
-        document.getElementById('validation-message').innerText = error;
-        document.getElementById('grade-result').innerText = ""; // Clear grade result
+        //Display error
+        document.getElementById('validationMessage').innerText = error;
+        document.getElementById('gradeResult').innerText = ""; 
     }
 }

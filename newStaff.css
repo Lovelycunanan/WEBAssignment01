@@ -45,17 +45,18 @@ h1{
 table{
     padding-top: 25px;
     padding-left: 50px;
+    padding-bottom: 20px;
 }
-#staff-table th {
+#staffTable th {
     text-align: left;
     padding-right: 150px;
     cursor: pointer; 
 }
-#staff-table th:hover {
+#staffTable th:hover {
     background-color: #B19470; 
     border-radius: 4px;
 }
-#staff-table th.sorted {
+#staffTable th.sorted {
     background-color: #B19470; 
 }
 input{
@@ -66,4 +67,10 @@ input{
     color: #FEFBF6;
     padding: 3px;
     margin-left: 50px;
+}
+footer{
+    background-color: #B19470;
+    color: #FEFBF6;
+    text-align: center;
+    padding: 10px;
 }

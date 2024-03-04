@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="newStaff.css">
-    <title>New Staff</title>
+    <title>Staff</title>
 </head>
 <body>
     <header>
@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="index.html">Profile</a></li>
                 <li><a href="markToGrade.html">Grade Converter</a></li>
-                <li><a href="newStaff.html">New Staff</a></li>
+                <li><a href="newStaff.html">Staff</a></li>
                 <li><a href="weather.html">Weather</a></li>
             </ul>
         </nav>
@@ -27,21 +27,20 @@
 
     <h1>Staff Information</h1>
     <input type="text" id="searchInput" onkeyup="searchStaff()" placeholder="Search for names...">
-    <table id="staff-table">
+    <table id="staffTable"> <!-- Table to display the staff information -->
         <thead>
-            <thead>
-                <tr>
-                    <th onclick="sortTable('Name')">Name</th>
-                    <th onclick="sortTable('Occupation')">Occupation</th>
-                    <th onclick="sortTable('Location')">Location</th>
-                    <th onclick="sortTable('ID')">ID</th>
-                    <th onclick="sortTable('Date')">Date</th>
-                    <th onclick="sortTable('Salary')">Salary</th>
-                </tr>
-            </thead>
+            <tr>
+                <!-- Clickable header for each column -->
+                <th onclick="sortTable('Name')">Name</th>
+                <th onclick="sortTable('Occupation')">Occupation</th>
+                <th onclick="sortTable('Location')">Location</th>
+                <th onclick="sortTable('ID')">ID</th>
+                <th onclick="sortTable('Date')">Date</th>
+                <th onclick="sortTable('Salary')">Salary</th>
+            </tr>
         </thead>
-        <tbody id="staff-table-body">
-            <!-- Staff information will be inserted here -->
+        <tbody id="staffTableBody">
+            <!-- Where the staff information will be inserted -->
         </tbody>
     </table>
 
